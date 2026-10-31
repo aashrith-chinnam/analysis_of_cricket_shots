@@ -1,0 +1,69 @@
+{
+  "model": "resnet50",
+  "protocol": "random",
+  "seed": 7,
+  "n_train": 3306,
+  "n_val": 709,
+  "n_test": 709,
+  "test_leak_fraction": 0.840620592383639,
+  "val_leak_fraction": 0.8152327221438646,
+  "best_epoch": 4,
+  "epochs_run": 12,
+  "best_val_f1": 1.0,
+  "test_acc": 1.0,
+  "test_macro_f1": 1.0,
+  "test_ece": 0.07490290842204236,
+  "per_class": {
+    "drive": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 184
+    },
+    "legglance-flick": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 168
+    },
+    "pullshot": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 189
+    },
+    "sweep": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 168
+    }
+  },
+  "confusion_matrix": [
+    [
+      184,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      168,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      189,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      168
+    ]
+  ],
+  "misclassified": []
+}

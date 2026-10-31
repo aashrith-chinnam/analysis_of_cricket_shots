@@ -1,0 +1,75 @@
+{
+  "model": "efficientnet_b0",
+  "protocol": "group",
+  "seed": 7,
+  "n_train": 3707,
+  "n_val": 638,
+  "n_test": 153,
+  "test_leak_fraction": 0.0,
+  "val_leak_fraction": 0.0,
+  "best_epoch": 2,
+  "epochs_run": 10,
+  "best_val_f1": 1.0,
+  "test_acc": 0.9934640522875817,
+  "test_macro_f1": 0.9930926505802173,
+  "test_ece": 0.08514280529583201,
+  "per_class": {
+    "drive": {
+      "precision": 0.9777777777777777,
+      "recall": 1.0,
+      "f1": 0.9887640449438202,
+      "support": 44
+    },
+    "legglance-flick": {
+      "precision": 1.0,
+      "recall": 0.967741935483871,
+      "f1": 0.9836065573770492,
+      "support": 31
+    },
+    "pullshot": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 42
+    },
+    "sweep": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 36
+    }
+  },
+  "confusion_matrix": [
+    [
+      44,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      30,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      42,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      36
+    ]
+  ],
+  "misclassified": [
+    {
+      "path": "/kaggle/input/datasets/aneesh10/cricket-shot-dataset/data/legglance-flick/legglance740.png",
+      "true": "legglance-flick",
+      "pred": "drive"
+    }
+  ]
+}

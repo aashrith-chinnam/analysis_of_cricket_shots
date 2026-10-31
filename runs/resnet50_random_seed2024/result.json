@@ -1,0 +1,75 @@
+{
+  "model": "resnet50",
+  "protocol": "random",
+  "seed": 2024,
+  "n_train": 3306,
+  "n_val": 709,
+  "n_test": 709,
+  "test_leak_fraction": 0.8208744710860366,
+  "val_leak_fraction": 0.844851904090268,
+  "best_epoch": 3,
+  "epochs_run": 11,
+  "best_val_f1": 1.0,
+  "test_acc": 0.998589562764457,
+  "test_macro_f1": 0.9986593632514574,
+  "test_ece": 0.07751940823408376,
+  "per_class": {
+    "drive": {
+      "precision": 0.9945945945945946,
+      "recall": 1.0,
+      "f1": 0.997289972899729,
+      "support": 184
+    },
+    "legglance-flick": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 168
+    },
+    "pullshot": {
+      "precision": 1.0,
+      "recall": 0.9947089947089947,
+      "f1": 0.9973474801061007,
+      "support": 189
+    },
+    "sweep": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 168
+    }
+  },
+  "confusion_matrix": [
+    [
+      184,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      168,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      188,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      168
+    ]
+  ],
+  "misclassified": [
+    {
+      "path": "/kaggle/input/datasets/aneesh10/cricket-shot-dataset/data/pullshot/pullshot1156.png",
+      "true": "pullshot",
+      "pred": "drive"
+    }
+  ]
+}

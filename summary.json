@@ -1,0 +1,58 @@
+[
+  {
+    "model": "resnet50",
+    "protocol": "group",
+    "n_runs": 5,
+    "acc_mean": 99.6078431372549,
+    "acc_std": 0.5228758169934622,
+    "f1_mean": 99.61224366992276,
+    "f1_std": 0.5092580757351318,
+    "ece_mean": 0.08515960916974186,
+    "ece_std": 0.0039395440420069245,
+    "n_test_mean": 153.0,
+    "test_leak_mean": 0.0,
+    "best_epoch_mean": 5.8
+  },
+  {
+    "model": "mobilenet_v3_large",
+    "protocol": "group",
+    "n_runs": 5,
+    "acc_mean": 100.0,
+    "acc_std": 0.0,
+    "f1_mean": 100.0,
+    "f1_std": 0.0,
+    "ece_mean": 0.0999102458844777,
+    "ece_std": 0.01174029768757913,
+    "n_test_mean": 153.0,
+    "test_leak_mean": 0.0,
+    "best_epoch_mean": 6.0
+  },
+  {
+    "model": "efficientnet_b0",
+    "protocol": "group",
+    "n_runs": 5,
+    "acc_mean": 99.6078431372549,
+    "acc_std": 0.320194737618715,
+    "f1_mean": 99.63266258808824,
+    "f1_std": 0.30300213519422864,
+    "ece_mean": 0.07588835385889789,
+    "ece_std": 0.005175029726779827,
+    "n_test_mean": 153.0,
+    "test_leak_mean": 0.0,
+    "best_epoch_mean": 7.6
+  },
+  {
+    "model": "resnet50",
+    "protocol": "random",
+    "n_runs": 5,
+    "acc_mean": 99.71791255289139,
+    "acc_std": 0.3216291749221823,
+    "f1_mean": 99.72241628550839,
+    "f1_std": 0.3158964585586427,
+    "ece_mean": 0.07859516167338039,
+    "ece_std": 0.003478186050349361,
+    "n_test_mean": 709.0,
+    "test_leak_mean": 0.8315937940761637,
+    "best_epoch_mean": 3.4
+  }
+]

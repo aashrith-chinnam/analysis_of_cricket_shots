@@ -1,0 +1,69 @@
+{
+  "model": "mobilenet_v3_large",
+  "protocol": "group",
+  "seed": 2024,
+  "n_train": 3640,
+  "n_val": 553,
+  "n_test": 153,
+  "test_leak_fraction": 0.0,
+  "val_leak_fraction": 0.0,
+  "best_epoch": 6,
+  "epochs_run": 14,
+  "best_val_f1": 1.0,
+  "test_acc": 1.0,
+  "test_macro_f1": 1.0,
+  "test_ece": 0.09121030608033821,
+  "per_class": {
+    "drive": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 47
+    },
+    "legglance-flick": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 30
+    },
+    "pullshot": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 41
+    },
+    "sweep": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 35
+    }
+  },
+  "confusion_matrix": [
+    [
+      47,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      30,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      41,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      35
+    ]
+  ],
+  "misclassified": []
+}

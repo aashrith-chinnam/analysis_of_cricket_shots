@@ -1,0 +1,85 @@
+{
+  "model": "resnet50",
+  "protocol": "random",
+  "seed": 31,
+  "n_train": 3306,
+  "n_val": 709,
+  "n_test": 709,
+  "test_leak_fraction": 0.8251057827926658,
+  "val_leak_fraction": 0.8547249647390691,
+  "best_epoch": 2,
+  "epochs_run": 10,
+  "best_val_f1": 1.0,
+  "test_acc": 0.995768688293371,
+  "test_macro_f1": 0.9957328160989211,
+  "test_ece": 0.08277501252037178,
+  "per_class": {
+    "drive": {
+      "precision": 1.0,
+      "recall": 0.9836956521739131,
+      "f1": 0.9917808219178083,
+      "support": 184
+    },
+    "legglance-flick": {
+      "precision": 0.9824561403508771,
+      "recall": 1.0,
+      "f1": 0.9911504424778761,
+      "support": 168
+    },
+    "pullshot": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 189
+    },
+    "sweep": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 168
+    }
+  },
+  "confusion_matrix": [
+    [
+      181,
+      3,
+      0,
+      0
+    ],
+    [
+      0,
+      168,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      189,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      168
+    ]
+  ],
+  "misclassified": [
+    {
+      "path": "/kaggle/input/datasets/aneesh10/cricket-shot-dataset/data/drive/drives110.png",
+      "true": "drive",
+      "pred": "legglance-flick"
+    },
+    {
+      "path": "/kaggle/input/datasets/aneesh10/cricket-shot-dataset/data/drive/drives124.png",
+      "true": "drive",
+      "pred": "legglance-flick"
+    },
+    {
+      "path": "/kaggle/input/datasets/aneesh10/cricket-shot-dataset/data/drive/drives674.png",
+      "true": "drive",
+      "pred": "legglance-flick"
+    }
+  ]
+}

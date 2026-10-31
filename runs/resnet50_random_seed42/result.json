@@ -1,0 +1,100 @@
+{
+  "model": "resnet50",
+  "protocol": "random",
+  "seed": 42,
+  "n_train": 3306,
+  "n_val": 709,
+  "n_test": 709,
+  "test_leak_fraction": 0.8265162200282088,
+  "val_leak_fraction": 0.8504936530324401,
+  "best_epoch": 1,
+  "epochs_run": 9,
+  "best_val_f1": 1.0,
+  "test_acc": 0.9915373765867419,
+  "test_macro_f1": 0.9917286349250406,
+  "test_ece": 0.08263455631870814,
+  "per_class": {
+    "drive": {
+      "precision": 0.9837837837837838,
+      "recall": 0.9891304347826086,
+      "f1": 0.986449864498645,
+      "support": 184
+    },
+    "legglance-flick": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 168
+    },
+    "pullshot": {
+      "precision": 0.9842931937172775,
+      "recall": 0.9947089947089947,
+      "f1": 0.9894736842105263,
+      "support": 189
+    },
+    "sweep": {
+      "precision": 1.0,
+      "recall": 0.9821428571428571,
+      "f1": 0.990990990990991,
+      "support": 168
+    }
+  },
+  "confusion_matrix": [
+    [
+      182,
+      0,
+      2,
+      0
+    ],
+    [
+      0,
+      168,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      188,
+      0
+    ],
+    [
+      2,
+      0,
+      1,
+      165
+    ]
+  ],
+  "misclassified": [
+    {
+      "path": "/kaggle/input/datasets/aneesh10/cricket-shot-dataset/data/drive/drives722.png",
+      "true": "drive",
+      "pred": "pullshot"
+    },
+    {
+      "path": "/kaggle/input/datasets/aneesh10/cricket-shot-dataset/data/drive/drives723.png",
+      "true": "drive",
+      "pred": "pullshot"
+    },
+    {
+      "path": "/kaggle/input/datasets/aneesh10/cricket-shot-dataset/data/pullshot/pullshot1185.png",
+      "true": "pullshot",
+      "pred": "drive"
+    },
+    {
+      "path": "/kaggle/input/datasets/aneesh10/cricket-shot-dataset/data/sweep/sweep201.png",
+      "true": "sweep",
+      "pred": "drive"
+    },
+    {
+      "path": "/kaggle/input/datasets/aneesh10/cricket-shot-dataset/data/sweep/sweep214.png",
+      "true": "sweep",
+      "pred": "drive"
+    },
+    {
+      "path": "/kaggle/input/datasets/aneesh10/cricket-shot-dataset/data/sweep/sweep821.png",
+      "true": "sweep",
+      "pred": "pullshot"
+    }
+  ]
+}

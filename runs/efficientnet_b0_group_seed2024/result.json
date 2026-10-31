@@ -1,0 +1,75 @@
+{
+  "model": "efficientnet_b0",
+  "protocol": "group",
+  "seed": 2024,
+  "n_train": 3640,
+  "n_val": 553,
+  "n_test": 153,
+  "test_leak_fraction": 0.0,
+  "val_leak_fraction": 0.0,
+  "best_epoch": 13,
+  "epochs_run": 21,
+  "best_val_f1": 1.0,
+  "test_acc": 0.9934640522875817,
+  "test_macro_f1": 0.9942997797642181,
+  "test_ece": 0.07791819252999001,
+  "per_class": {
+    "drive": {
+      "precision": 1.0,
+      "recall": 0.9787234042553191,
+      "f1": 0.989247311827957,
+      "support": 47
+    },
+    "legglance-flick": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 30
+    },
+    "pullshot": {
+      "precision": 0.9761904761904762,
+      "recall": 1.0,
+      "f1": 0.9879518072289156,
+      "support": 41
+    },
+    "sweep": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 35
+    }
+  },
+  "confusion_matrix": [
+    [
+      46,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      30,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      41,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      35
+    ]
+  ],
+  "misclassified": [
+    {
+      "path": "/kaggle/input/datasets/aneesh10/cricket-shot-dataset/data/drive/drives59.png",
+      "true": "drive",
+      "pred": "pullshot"
+    }
+  ]
+}
